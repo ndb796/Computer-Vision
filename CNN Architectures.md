@@ -16,7 +16,7 @@
   * Overall architecture: Conv - Pool - Conv - Pool - FC - FC
   * Convolution: 5 x 5 Convolution filters with stride 1
   * Pooling: 2 x 2 Max pooling with stride 2
-  
+
 * AlexNet: 2012 Winner
   * Overall architecture: Conv - Pool - Norm - Conv - Pool - Norm - Conv - Conv - Conv - Pool - FC - FC - FC
   * Bigger
@@ -42,7 +42,7 @@
 * Known obstacles
  * Backward gradients that are easily vanished or exploded
  * Forward responses that are easily vanished or exploded
-
+ 
 * Enablers
  * ReLU activations
  * An appropriate initialization technique
