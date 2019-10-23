@@ -64,5 +64,7 @@
   * 56-layer network has higher training error and test error than 20-layer network when 3 x 3 conv layers are simply stacked, but this is not caused by overfitting.
   * Solvers might have difficulities in approximating identity mapping by multiple non-linear layers.
  
-* Solution
-  * Deep residual learning: 
+* Solution: Deep residual learning
+  * Plain Net aims to fit the desired mapping <b>H(x)</b>.
+  * Residual Net aims to fit <b>F(x) = H(x) - x</b> instead of <b>H(x)</b>.
+
