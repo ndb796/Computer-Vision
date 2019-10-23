@@ -39,3 +39,6 @@
 * For enlarging the score map
   * Adding a simple bilinear interpolation on the top of the network
   * Adding skip-connections
+* Experimental results: Faster and more accurate than the previous approaches based on CNNs
+  * Faster: The end-to-end architecture that does not rely on off-the-shelf proposals
+  * More Accurate: Not bounded by quality of proposals
