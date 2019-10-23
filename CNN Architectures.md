@@ -67,4 +67,4 @@
 * Solution: Deep residual learning
   * Plain Net aims to fit the desired mapping <b>H(x)</b>.
   * Residual Net aims to fit <b>F(x) = H(x) - x</b> instead of <b>H(x)</b>.
-
+  
