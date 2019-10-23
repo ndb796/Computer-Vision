@@ -68,3 +68,16 @@
   * Plain Net aims to fit the desired mapping <b>H(x)</b>.
   * Residual Net aims to fit <b>F(x) = H(x) - x</b> instead of <b>H(x)</b>.
   
+### ResNet - Going Deeper
+
+* Simple but just deep
+  * Following the style of VGGNets
+  * All 3 x 3 conv filters, except the first conv layer
+  * Batch normalization after every conv layer
+  * Periodically, double the number of filters and downsample spatially using stride 2
+
+* Other remarks
+  * No FC layer at the end besides the final classification layer
+  * No dropout
+  
+* Using deeper residual blocks with bottlenecks
