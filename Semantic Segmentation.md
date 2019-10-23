@@ -47,7 +47,9 @@
 
 * An advanced version of FCN
   * <b>Atrous convolutions</b> that enlarge receptive fields
-  * <b>Fully-connected Conditional Random Field</b> (CRF), a post-processing technique
+  * <b>Fully-connected Conditional Random Field (CRF)</b>, a post-processing technique
   * A more powerful backbone network: ResNet101
 * Atrous convolution
   * Convolution kernel with "holes"
+* CNN with atrous convolution layers
+  * Add Atrous Spatial Pyramid Pooling (ASPP) on top of a convolutional feature map
