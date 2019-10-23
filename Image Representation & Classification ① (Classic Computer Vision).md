@@ -24,7 +24,42 @@
 * Convolution output is a linear combination of input.
 * Smoothing, Sharpening, Gradient, ...
 
-| 왼쪽 정렬 | 가운데 정렬 | 오른쪽 정렬 |
-|:--------|:--------:|--------:|
-| 내용 11 | 내용 12 | 내용 13 |
-| 내용 21 | 내용 22 | 내용 23 |
+#### Horizontal filter
+
+||||
+|:-:|:-:|:-:|
+|-1|0|1|
+|-2|0|2|
+|-1|0|1|
+
+#### Vertical Filter
+
+||||
+|:-:|:-:|:-:|
+|-1|-2|-1|
+|0|0|0|
+|1|2|1|
+
+### Padding
+
+* Removing boundary effect of image filtering
+
+### Edge
+
+* A set of points lying on a boundary between distinct regions
+* With sudden changes of intensity
+
+### Edge Detection
+
+* Convolution of smoothing (denoising) and graident (edge detection) filteres
+
+### Corners
+
+* Junctions of contours
+* Good local features to match
+
+### Harris Corner Detection's Basic Idea
+
+* Corner: significant change in all directions
+* Edge: No change along the edge direction
+* Flat region: No change in all directions
