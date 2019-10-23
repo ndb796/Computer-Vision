@@ -42,3 +42,12 @@
 * Experimental results: Faster and more accurate than the previous approaches based on CNNs
   * Faster: The end-to-end architecture that does not rely on off-the-shelf proposals
   * More Accurate: Not bounded by quality of proposals
+
+### DeepLab
+
+* An advanced version of FCN
+  * <b>Atrous convolutions</b> that enlarge receptive fields
+  * <b>Fully-connected Conditional Random Field</b> (CRF), a post-processing technique
+  * A more powerful backbone network: ResNet101
+* Atrous convolution
+  * Convolution kernel with "holes"
