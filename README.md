@@ -10,7 +10,7 @@
 4. [CNN Architectures](/CNN%20Architectures.md)
 5. [Object Detection](/Object%20Detection.md)
 6. [Semantic Segmentation](/Semantic%20Segmentation.md)
-7. Metric Learning
+7. [Metric Learning](/Metric%20Learning.md)
 8. Video Classification I (Classic Computer Vision)
 9. Video Classificaiton II (Deep Learning)
 10. Object Tracking
