@@ -10,7 +10,9 @@
     * Fusion by the first fully-connected layer
   * Slow Fusion
     * 3D convolution for the fusion in the middle of the networks
+  * 기본적으로 Slow Fusion 방식이 다른 방법들에 비하여 높은 성능을 보인다.
 * Multi-resolution CNN for efficient and effective video recognition
+  * Multi-resolution CNN은 서로 다른 Stream에서 고해상도 및 저해상도를 각각 처리한 뒤에, 결과를 구하는 아키텍처이다.
   * Motivation: Video recognition is computationally heavy
   * A naive solution: Decreasing video resolution
     * Enhancing the computational efficiency
@@ -30,3 +32,7 @@
 * Limitation
   * Underperformance: Worse than "hand-crafted features + SVM"
   * Inappropriate use of motion cue
+  * 기본적인 "Time Information Fusion" 방법들은 전통적인 방법보다 오히려 성능이 떨어진다는 한계점이 있다.
+
+### 3D Convolutional Neural Network
+
