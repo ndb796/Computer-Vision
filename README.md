@@ -12,7 +12,7 @@
 6. [Semantic Segmentation](/Semantic%20Segmentation.md)
 7. [Metric Learning](/Metric%20Learning.md)
 8. [Video Classification I (Classic Computer Vision)](/Video%20Classification%20I%20(Classic%20Computer%20Vision).md)
-9. Video Classificaiton II (Deep Learning)
+9. [Video Classificaiton II (Deep Learning)](/Video%20Classificaiton%20II%20(Deep%20Learning).md)
 10. Object Tracking
 11. Fitting Matching
 12. Camera Model
