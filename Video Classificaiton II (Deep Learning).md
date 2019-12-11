@@ -36,3 +36,50 @@
 
 ### 3D Convolutional Neural Network
 
+* Extracting features from both spatial and temporal dimensions by 3D convolutions
+* Capturing the motion information encoded in multiple adjacent frames
+* 인접한 프레임 사이에서의 모션(motion) 정보를 처리할 수 있다.
+* An old architecture trained with a small number of videos
+* A shallow architecture trained with a small number of videos
+* Explicit motion computation
+  * Computationally heavy
+  * Cannot fully leverage the advantage of 3D convolution
+* Underperformance
+  * Worse in accuracy than previous work based on hand-crafted features
+* 초기의 3D CNN은 오래된 방법이며, 기존의 전통적인 방법보다 성능이 떨어진다.
+
+### C3D
+
+* A modern 3D CNN architecture
+  * VGGNet style network
+  * 3 x 3 x 3 (3D) convolution kernels
+  * 2 x 2 x 2 max pooling with stride 1
+  * ReLU activation functions
+* Achieving state-of-the-art scores on most of existing video recognition benchmarks
+* C3D는 전통적인 방법보다 높은 정확도(Accuracy)를 보인다.
+* Limitations
+  * Still to expensive in terms of the number of parameters, computation, and memory
+  * Hard to capture large-displacement motion
+  * Limited temporal receptive fields
+
+### Two-Stream Convolutional Network
+
+* CNN with two seperate streams
+  * Spatial stream: Action recognition from still frame images
+  * Temporal stream: Action recognition from dense motion fields (optical flows)
+* Motivated by human visual cortex that contains two pathways
+  * Ventral stream which performs object recognition
+  * Dorsal stream which recognizes motion
+* Advantage of decoupling spatial and temporal networks
+  * Able to exploit large-scale image recognition datasets or pretrained networks for the spatial stream
+* Spatial stream
+  * ImageNet pretrained network, whose architecture is similar to ZFNet
+  * Fairly competitive on its own
+* Temporal stream
+  * A CNN whose architecture is similar to ZFNet
+  * Taking a stacked optical flow images as input
+  * Learned from scratch: lack of training data
+  * Solution: Multi-task learning
+* Limitations
+  * It doubles the number of network parameters and the amount of computation
+  * Explicit optical flow estimation is computationally too heavy
