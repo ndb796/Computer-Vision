@@ -8,8 +8,8 @@
 2. [Image Representation & Classification I (Classic Computer Vision)](/Image%20Representation%20%26%20Classification%20①%20(Classic%20Computer%20Vision).md)
 3. Image Representation & Classification II (Deep Learning)
 4. [CNN Architectures](/CNN%20Architectures.md)
-5. Object Detection
-6. Semantic Segmentation
+5. [Object Detection](/Object%20Detection.md)
+6. [Semantic Segmentation](/Semantic%20Segmentation.md)
 7. Metric Learning
 8. Video Classification I (Classic Computer Vision)
 9. Video Classificaiton II (Deep Learning)
