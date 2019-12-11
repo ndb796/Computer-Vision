@@ -5,7 +5,7 @@
 * 4 different approaches to fusing information across temporal domain
   * Single Frame
   * Early Fusion
-    * Allowing the network to precisely detect local motion direction and speed
+    * Pixel-level fusion: Allowing the network to precisely detect local motion direction and speed
   * Late Fusion
     * Fusion by the first fully-connected layer
   * Slow Fusion
@@ -61,12 +61,14 @@
   * Still to expensive in terms of the number of parameters, computation, and memory
   * Hard to capture large-displacement motion
   * Limited temporal receptive fields
+  * 3D CNN은 무겁다는 단점이 있는데, C3D에서도 이러한 문제를 여전히 가지고 있다.
 
 ### Two-Stream Convolutional Network
 
 * CNN with two seperate streams
   * Spatial stream: Action recognition from still frame images
   * Temporal stream: Action recognition from dense motion fields (optical flows)
+  * 두 개의 Stream에서의 결과를 Fusion하는 방식
 * Motivated by human visual cortex that contains two pathways
   * Ventral stream which performs object recognition
   * Dorsal stream which recognizes motion
@@ -83,3 +85,4 @@
 * Limitations
   * It doubles the number of network parameters and the amount of computation
   * Explicit optical flow estimation is computationally too heavy
+  * 역시나 두 개의 모델을 결합해야 한다는 점에서 비용이 
