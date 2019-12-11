@@ -85,4 +85,4 @@
 * Limitations
   * It doubles the number of network parameters and the amount of computation
   * Explicit optical flow estimation is computationally too heavy
-  * 역시나 두 개의 모델을 결합해야 한다는 점에서 비용이 
+  * 역시나 두 개의 모델을 결합해야 한다는 점에서 비용이 큰 편이다.
