@@ -14,5 +14,5 @@
 8. [Video Classification I (Classic Computer Vision)](/Video%20Classification%20I%20(Classic%20Computer%20Vision).md)
 9. [Video Classificaiton II (Deep Learning)](/Video%20Classificaiton%20II%20(Deep%20Learning).md)
 10. Object Tracking
-11. Fitting Matching
+11. [Fitting Matching](/Fitting%20Matching.md)
 12. Camera Model
